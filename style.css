@@ -165,7 +165,7 @@ body{
 }
 .ocean{
     font-family: 'Courier New', Courier, monospace;
-    padding: 2.5rem!important;
+    padding: 1.5rem!important;
 
 }
 .ocean p{
@@ -175,14 +175,19 @@ body{
 .ocean:hover{
     background-color: #ea2425 !important;
 }
+.f-btn{
+    padding: 2px 5px;
+    font-size: 13px;
+}
 .inputs input{
-    margin-bottom:  10px ;
+    margin-bottom:  8px;
 }
 .comment input{
-    padding: 0.5rem 0rem 5.5rem 0.5rem;
+    padding: 0.5rem 0rem 4.5rem 0.5rem;
+    font-size: 13px;
 }
 .project{
-    padding: 30px 90px 10px 30px;
+    padding: 15px 90px 10px 30px;
 }
 .project h2{
     font-family: 'PT Sans', sans-serif;
@@ -191,6 +196,7 @@ body{
 }
 .project p{
     font-family: 'Montserrat', sans-serif !important;
+    font-size: 14px;
 }
 .quick{
     padding: 0px 100px 0px 30px;
@@ -199,6 +205,9 @@ body{
     font-family: 'PT Sans', sans-serif;
     font-weight: 700;
     font-size: 20px;
+}
+.bg-color{
+    background-color: #ebf0f3 !important;
 }
 .man{
     width: 75px;
@@ -215,7 +224,13 @@ body{
 .fa-brands{
     color: skyblue;
 }
-
+.quick-inp{
+    font-size: 13px;
+}
+.sumbitm-btn{
+    padding: 2px 5px;
+    font-size: 13px;
+}
 #forAdd2{
     display: none;
 }

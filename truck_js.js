@@ -168,7 +168,7 @@ document.querySelector("#srvInp").addEventListener("change", function () {
 
 document.addEventListener("DOMContentLoaded", () => {
     var img = document.getElementById('srvImg');
-    img.src = localStorage.getItem("onn") ?? "./truck-img/civi-engineering.jpg";
+    img.src = localStorage.getItem("onn") ?? "./truck-img/civil-engineering.jpg";
     document.getElementById("l-text").innerHTML = localStorage.getItem('l-chng');
     document.getElementById("forAddp").innerHTML = localStorage.getItem("sblog");
     document.getElementById("forAddh3").innerHTML = localStorage.getItem("blog");
@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function theChange() {
     var img = document.getElementById('srvImg');
-    img.src = localStorage.getItem("onn") ?? "./truck-img/civi-engineering.jpg";
+    img.src = localStorage.getItem("onn") ?? "./truck-img/civil-engineering.jpg";
 }
 
 
