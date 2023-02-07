@@ -237,8 +237,8 @@ body{
 #forAdd3{
     display: none;
 }
-.ser-mg{
-    margin-bottom: 1.09rem !important;
+.row.d-flex.mb-4.ser-mg {
+    margin-bottom: 1.09rem;
 }
 @media only screen and (min-width: 1440px){
 }
