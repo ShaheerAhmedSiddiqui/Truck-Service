@@ -1,0 +1,402 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Josefin+Sans:ital,wght@0,100;0,400;0,500;0,700;1,500&family=Macondo&family=Montserrat:wght@400;600&family=PT+Sans&family=Roboto+Condensed:wght@300&family=Roboto+Flex:opsz,wght@8..144,300&family=Roboto+Mono:wght@300&family=Roboto:wght@700&family=Satisfy&family=Smooch+Sans:wght@300&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Josefin+Sans:ital,wght@0,100;0,500;0,700;1,500&family=Montserrat&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Josefin+Sans:ital,wght@0,100;0,500;0,700;1,500&family=Macondo&family=Montserrat:wght@400;600&family=PT+Sans&family=Roboto+Condensed:wght@300&family=Roboto+Flex:opsz,wght@8..144,300&family=Roboto+Mono:wght@300&family=Roboto:wght@700&family=Satisfy&family=Smooch+Sans:wght@300&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Josefin+Sans:ital,wght@0,100;0,400;0,500;0,700;1,500&family=Macondo&family=Montserrat:wght@400;600&family=PT+Sans&family=Raleway:wght@700&family=Roboto+Condensed:wght@300&family=Roboto+Flex:opsz,wght@8..144,300&family=Roboto+Mono:wght@300&family=Roboto:wght@700&family=Satisfy&family=Smooch+Sans:wght@300&family=Yellowtail&display=swap');
+/* for dashborad */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+.sidebar{
+    display: none;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    overflow: auto;
+    width: 100%;
+}
+.sidebar{
+    position: fixed;
+    z-index: 10;
+    height: 100%;
+    width: 250px;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(26, 25, 25);
+    padding: 6px 14px;
+}
+.sidebar .logo-content {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.sidebar .logo-content .logo{
+    display: flex;
+    color: #fff;
+    align-items: center;
+    height: 60px;
+}
+.sidebar .logo-content .logo i {
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+.sidebar .logo-content .logo .logo-name{
+    font-size: 20px;
+    color: white;
+    padding: 0px 5px;
+}
+.nav-list{
+    padding: 10px;
+    margin: 0;
+    margin-bottom: 100px;
+}
+.nav-list li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+.nav-list li a{
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.nav-list li a:hover{
+    background-color: #e0f1ff8c;
+    border-radius: 15px;
+    padding: 10px;
+}
+.nav-list li a i{
+    padding: 0px 5px;
+}
+.links-name{
+    padding: 0px 20px;
+}
+.p-img{
+    width: 58px;
+}
+.p-img img{
+    width: 100%;
+}
+.p-text{
+    color: #fff;
+    font-family: 'Josefin Sans';
+}
+.p-text h3{
+    font-size: 16px;
+}
+.p-text h5{
+    font-size: 15px;
+}
+.edit {
+    background-color: beige;
+    margin: auto;
+    width: 500px;
+
+}
+.icons{
+    display: none;
+}
+/* dashboard */
+.inputs i{
+    position: absolute;
+}
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif !important;
+}
+.phone img{
+    padding: 0px 10px;
+}
+.phone p{
+    color: #cccdd1;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+.nav-link.active:hover{
+    color: #ea2425 !important;
+}
+.email img{
+    padding: 0px 10px;
+}
+.email p{
+    color: #cccdd1;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+.col a{
+    font-size: 16px;
+    font-family: sans-serif;
+    color: black;
+}
+.plus{
+    font-size: 18px;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: 700;
+}
+.text-decoration-none:hover{
+    color: #ea2425 !important;
+}
+.context{
+    position: relative;
+    padding: 200px;
+    text-align: center;
+}
+.logistic{
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 8rem;
+    width: 100%;
+}
+.logistic h1{
+    font-family: 'Raleway', sans-serif;
+}
+.logistic h3{
+    font-family: 'Raleway', sans-serif;
+}
+.lorem{
+    margin-bottom: 30px;
+}
+.ocean{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 2.5rem!important;
+
+}
+.ocean p{
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 0.75rem;
+}
+.ocean:hover{
+    background-color: #ea2425 !important;
+}
+.inputs input{
+    margin-bottom:  10px ;
+}
+.comment input{
+    padding: 0.5rem 0rem 5.5rem 0.5rem;
+}
+.project{
+    padding: 30px 90px 10px 30px;
+}
+.project h2{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+.project p{
+    font-family: 'Montserrat', sans-serif !important;
+}
+.quick{
+    padding: 0px 100px 0px 30px;
+}
+.quick h3{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+.man{
+    width: 75px;
+}
+.blog h2{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.news h2{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.footer{
+    background-color: #282d30;
+}
+.fa-brands{
+    color: skyblue;
+}
+
+#forAdd2{
+    display: none;
+}
+#forAdd3{
+    display: none;
+}
+@media only screen and (min-width: 1440px){
+}
+@media only screen and  (max-width: 1024px){
+.logistic{
+    padding: 100px 0px;
+}
+.ocean{
+    padding: 0.5rem !important;
+}
+.ocean img{
+    margin: 0.5rem !important;
+}
+.ocean p{
+    margin: 0rem !important;
+    font-size: 0.75rem !important;
+}
+.services h2{
+    margin-bottom: 0.5rem !important;
+}
+.lorem {
+    margin-bottom: 25px;
+}
+.project {
+    padding: 10px 90px 10px 30px !important;
+    margin: 0rem !important;
+}
+.project h2{
+    font-size: 17px;
+    margin: 0px !important;
+}
+.project p{
+    margin: 0 !important;
+    line-height: 1.25rem !important;
+}
+.project button{
+    padding: 0.175rem 0.5rem;
+}
+.quick {
+    padding: 0rem 2rem !important;
+}
+.quick button{
+    padding: 0.175rem 0.5rem;
+}
+.quick h3 {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px !important;
+}
+.inputs {
+    width: 100%;
+}
+.inputs input {
+    margin-bottom: 0.25rem !important;
+    padding: 0 !important;
+    padding-left: 2rem!important;
+}
+.comment input {
+    padding: 0px 10px 65px 5px;
+}
+.comment{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.contact{
+    margin: 0rem !important;
+}
+.b-report {
+    padding: 1rem!important;
+}
+}
+ @media (max-width: 768px){
+.logistic {
+    padding: 73px 0px;
+}    
+.ocean p{
+    font-size: 0.5rem;
+}
+.ocean {
+    padding: 1rem 1rem !important;
+}
+.project h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem!important;
+}
+.project p {
+    margin-bottom: 1rem !important;
+}
+.project{
+   padding:  20px 30px 20px 30px !important;
+}
+.quick{
+    padding: 20px 30px 20px 30px !important;
+}
+.quick h3{
+    margin-bottom: 1rem !important;
+    font-size: 1.5rem !important;
+}
+.comment{
+    margin-bottom: 1rem !important;
+    padding: 0px!important;
+}
+.inputs input{
+    width: 100% !important;
+}
+.comment input{
+    width: 100% !important;
+}
+.ab-service{
+    display: block !important;
+}
+.text{
+    margin: auto;
+    margin-bottom: 3rem!important;
+}
+.contact{
+    display: block !important;
+}
+.comment input {
+    padding: 0.5rem 1.5rem 5.5rem 0.5rem;
+}
+.user{
+    margin-bottom: 0.75rem !important;
+}
+.newgroup button{
+    font-size: 0.75rem;
+}
+.newgroup input{
+    font-size: 0.75rem;
+}
+.rc{
+    display: contents;
+}
+.fa-brands{
+    padding: 0rem 1rem;
+}
+}
+@media (max-width: 425px){
+.logistic{
+    padding: 25px 0px !important;
+}  
+.ocean {
+    margin-bottom: 1rem !important;
+}
+.newgroup button{
+    padding: 0px !important;
+    font-size: 10px;
+}
+.f-img{
+    width: 25%;
+}
+}
+@media only screen and (max-width:991px) and (min-width:320px){
+    .ht-img{
+        display: flex;
+        align-items: baseline;
+
+    }
+    
+}
+#myInp{
+    margin-bottom: 5px;
+}
+.p-button{
+    background-color: black;
+    padding: 7px;
+    color: #fff;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.form input{
+    width: 70%;
+}
+.theNew button{
+    width: 70%;
+}
+.form{
+    margin-bottom: 5px;
+}

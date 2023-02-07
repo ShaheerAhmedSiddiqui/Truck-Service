@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="css/all.min.css" />
+    <title>Truck Plus</title>
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="header">
+            <div class="container-fluid p-0">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light px-3 py-2">
+                    <div class="container-fluid p-0">
+                        <div class="ht-img text-center m-0">
+                            <a class="navbar-brand" id="forPanel" href="#"><img id="ldImg" src="" class="img-fluid"
+                                    alt=""></a>
+                            <p class="fw-bold m-0">TRUCK PLUS</p>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" href="#">Features</a>
+                                <a class="nav-link active" aria-current="page" href="#" id="about">About</a>
+                                <a class="nav-link active" href="#">Blogs</a>
+                                <a class="nav-link active" href="#">Pricing</a>
+                                <a class="nav-link active" onclick="slideBar()" href="#" tabindex="-1"
+                                    aria-disabled="true">Edits</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="sidebar" id="focus">
+                    <div class="logo-content">
+                        <div class="logo">
+                            <i class="fa-solid fa-arrows-to-dot"></i>
+                            <div class="logo-name">Truck Panel</div>
+                        </div>
+                    </div>
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-house"></i>
+                                <span class="links-name">Home Page</span>
+                            </a>
+                            <!-- <span class="toolips">Dashboard</span> -->
+                        </li>
+                        <li>
+                            <a href="#" onclick="dashboard()">
+                                <i class="fa-solid fa-table-cells-large"></i>
+                                <span class="links-name">Logo Edits</span>
+                            </a>
+                            <!-- <span class="toolips">Dashboard</span> -->
+                        </li>
+                        <li>
+                            <a href="#" onclick="banner()">
+                                <i class="fa-solid fa-user"></i>
+                                <span class="links-name">Banner Setting </span>
+                            </a>
+                            <!-- <span class="toolips">Dashboard</span> -->
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-chart-line"></i>
+                                <span class="links-name">Analytical</span>
+                            </a>
+                            <!-- <span class="toolips">Dashboard</span> -->
+                        </li>
+                        <li>
+                            <a href="#" id="click" onclick="srvFunc()">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                <span class="links-name" onclick="">Services</span>
+                            </a>
+                            <!-- <span class="toolips">Dashboard</span> -->
+                        </li>
+                        <li>
+                            <a href="#" onclick="crgFunc()">
+                                <i class="fa-solid fa-folder-minus"></i>
+                                <span class="links-name">Cargo Ship</span>
+                            </a>
+                            <!-- <span class="toolips">Dashboard</span> -->
+                        </li>
+                        <li>
+                            <a href="#" onclick="addFunc()">
+                                <i class="fa-solid fa-gear"></i>
+                                <span class="links-name">User</span>
+                            </a>
+                            <!-- <span class="toolips">Dashboard</span> -->
+                        </li>
+                        <li>
+                            <a href="#" onclick="dashClose()">
+                                <i class="fa-solid fa-xmark"></i>
+                                <span class="links-name">Close</span>
+                            </a>
+                            <!-- <span class="toolips">Dashboard</span> -->
+                        </li>
+                    </ul>
+                    <div class="profile">
+                        <div class="row align-items-end">
+                            <div class="col-md-4">
+                                <div class="p-img">
+                                    <img src="./truck-img/shaheer ahmed.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8 p-0">
+                                <div class="p-text">
+                                    <h3>Shaheer Ahmed</h3>
+                                    <h5>Web Developer</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="myDiv" class="icons text-center p-5">
+                    <div class="edit d-grid p-5 text-center">
+                        <a href="#" class="text-decoration-none text-dark"><i
+                                class="fa-solid fa-truck-front fs-1 mb-3"></i></a>
+                        <div class="theNew">
+                            <form action="/action_page.php" class="form">
+                                <input type="file" id="myFile" name="filename" class="btn btn-dark bg-dark text-white">
+                            </form>
+                            <button class="p-button" onclick="myFun()">get Image</button>
+                            <input type="text" id="chgText" placeholder="Change header link here">
+                            <button class="p-button" id="check" onclick="letChange()">Change Here</button>
+                            <button class="p-button" onclick="popClose()">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="m-cont">
+                <img src="./truck-img/istock.jpg" id="forGet" class="logistic mb-5" alt="">
+                <div class="context">
+                    <h3 class="text-white fs-4 ">WE ARE THE LEADs IN</h3>
+                    <h1 class="text-white fs-1" id="l-text"></h1>
+                    <div class="gruop d-flex justify-content-center">
+                        <button type="button" class="btn btn-success me-3">Our Services</button>
+                        <button type="button" class="btn btn-primary">Contact Us </button>
+                    </div>
+                </div>
+            </div>
+            <div id="theShow" class="icons text-center p-5">
+                <div class="edit d-grid p-5 text-center">
+                    <a href="#" class="text-decoration-none text-dark"><i
+                            class="fa-solid fa-truck-front fs-1 mb-3"></i></a>
+                    <form action="/action_page.php" class="form">
+                        <input type="file" id="myInp" name="background-image" onchange="loadFile(event)"
+                            class="btn btn-dark bg-dark text-white">
+                    </form>
+                    <button class="p-button" onclick="getBanner()">get Image</button>
+                    <input type="text" id="lgtText" placeholder="Change header link here">
+                    <button class="p-button" id="check" onclick="lgtChng()">Change Here</button>
+                    <button class="p-button" onclick="popupClose()">Close</button>
+
+                </div>
+            </div>
+            <div id="srvChange" class="icons text-center p-5">
+                <div class="edit d-grid p-5 text-center">
+                    <a href="#" class="text-decoration-none text-dark"><i
+                            class="fa-solid fa-truck-front fs-1 mb-3"></i></a>
+                    <form action="/action_page.php" class="form">
+                        <input type="file" id="srvInp" name="background-image" onchange="loadFile(event)"
+                            class="btn btn-dark bg-dark text-white">
+                    </form>
+                    <button class="p-button" onclick="theChange()">get Image</button>
+                    <button class="p-button" onclick="srvClose()">Close</button>
+
+                </div>
+            </div>
+            <div class="container my-5">
+                <div class="row mb-5 ab-service">
+                    <div class="col-md-6 text">
+                        <div class="civil">
+                            <img src="" id="srvImg" class="img-fluid mb-3" alt="">
+                            <h2 class="mb-3 fs-4 fw-bold">ABOUT US</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, </p>
+                            <button type="button" class="btn btn-success">READ MORE</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text">
+                        <div class="services">
+                            <h2 class="mb-3 fs-4 fw-bold">SERVICES</h2>
+                            <div class="row d-flex">
+                                <div class="col-md-4 mb-3">
+                                    <div class="ocean p-4 bg-dark text-center">
+                                        <i class="fa-solid fa-ship text-white mb-3"></i>
+                                        <p class="text-white">Ocean Cargo</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="ocean p-4 bg-dark text-center">
+                                        <i class="fa-solid fa-truck-droplet mb-3 text-white"></i>
+                                        <p class="text-white">Referr Delivery</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="ocean p-4 bg-dark text-center">
+                                        <i class="fa-solid fa-box-archive text-white mb-3"></i>
+                                        <p class="text-white">Huge Storage</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex mb-4">
+                                <div class="col-md-4 mb-3">
+                                    <div class="ocean p-4 bg-dark text-center">
+                                        <i class="fa-solid fa-plane-departure text-white mb-3"></i>
+                                        <p class="text-white">Plane Departure</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="ocean p-4 bg-dark text-center">
+                                        <i class="fa-solid fa-car text-white mb-3"></i>
+                                        <p class="text-white">Ground Shipping</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="ocean p-4 bg-dark text-center">
+                                        <i class="fa-solid fa-envelope text-white mb-3"></i>
+                                        <p class="text-white">Postal Service</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                text of the printing and typesetting industry.text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard </p>
+                            <button type="button" class="btn btn-success">FULL SERVICES</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="crgChange" class="icons text-center p-5">
+                <div class="edit d-grid p-5 text-center">
+                    <a href="#" class="text-decoration-none text-dark"><i
+                            class="fa-solid fa-truck-front fs-1 mb-3"></i></a>
+                    <form action="/action_page.php" class="form">
+                        <input type="file" id="crgInp" name="background-image" onchange="loadFile(event)"
+                            class="btn btn-dark bg-dark text-white">
+                    </form>
+
+                    <button class="p-button" onclick="getBanner()">get Image</button>
+                    <button class="p-button" onclick="crgClose()">Close</button>
+
+                </div>
+            </div>
+            <div class="container-fluid mb-5">
+                <div class="row ab-service">
+                    <div class="col-md-6 text p-0">
+                        <div class="c-img">
+                            <img src="" id="crgImg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 text bg-light p-0">
+                        <div class="project mb-3">
+                            <h2>FEATURED PROJECTS</h2>
+                            <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                                Ipsum passages, and more recently with desktop </p>
+                            <button type="button" class="btn btn-success">FULL PROJECT</button>
+                        </div>
+                        <div class="quick">
+                            <h3>QUICK CONTACT</h3>
+                            <div class="contact mb-2 d-flex">
+                                <div class="inputs">
+                                    <div class="user">
+                                        <i class="fa-solid fa-user p-2"></i>
+                                        <input type="text" class="border border-white py-1  pe-3 ps-5"
+                                            placeholder="Name">
+                                    </div>
+                                    <div class="user">
+                                        <i class="fa-solid fa-envelope-circle-check p-2"></i>
+                                        <input type="text" class="border border-white py-1 pe-3 ps-5"
+                                            placeholder="Email">
+                                    </div>
+                                    <div class="user">
+                                        <i class="fa-solid fa-phone p-2"></i>
+                                        <input type="text" class="border border-white py-1 pe-3 ps-5"
+                                            placeholder="Service">
+                                    </div>
+                                </div>
+                                <div class="comment ms-3">
+                                    <input type="text" class="border border-white" placeholder="Comments">
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-success">SUBMIT NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-md-3">
+                        <div class="left-quote text-end">
+                            <img src="./truck-img/left-quotes-sign.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="clients text-center">
+                            <h3>HAPPY CLIENTS</h3>
+                            <p class="mb-4">It is a long established fact that a reader will be distracted by the
+                                readable content of a page when looking at its layout. The point of using Lorem Ipsum is
+                                that it has a more-or-less normal distribution of letters, as opposed to using 'Content
+                                here, content here'</p>
+                            <h5>CLIENTS NAME</h5>
+                            <p>Desination</p>
+                            <div class="row justify-content-center">
+                                <img src="./truck-img/man.png" class="img-fluid  man" alt="">
+                                <img src="./truck-img/man1.png" class="img-fluid man" alt="">
+                                <img src="./truck-img/girl.png" class="img-fluid man " alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="right-quote">
+                            <img src="./truck-img/right-quotes-symbol.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="adding" class="icons text-center p-5">
+                <div class="edit d-grid p-5 text-center">
+                    <a href="#" class="text-decoration-none text-dark"><i
+                            class="fa-solid fa-truck-front fs-1 mb-3"></i></a>
+                    <form action="/action_page.php" class="form">
+                        <input type="file" id="addInp" name="background-image" onchange="loadFile(event)"
+                            class="btn btn-dark bg-dark text-white">
+                    </form>
+                    <button class="p-button mb-3" onclick="letAdd()">get Image</button>
+                    <input type="text" class="mb-3" placeholder="Add Blog Heading" id="add-hd">
+                    <input type="text" class="mb-3" placeholder="Add Blog Paragraph" id="add-p">
+                    <button class="btn btn-dark mb-3" onclick="addHd()">Add Heading</button>
+                    <button class="btn btn-dark mb-3" onclick="getBlog()">Get Blog</button>
+                    <button class="p-button" onclick="addClose()">Close</button>
+
+                </div>
+            </div>
+            <div class="container-fluid bg-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 p-5">
+                            <div class="news">
+                                <h2 class="mb-4 fw-bold">NEWS LETTERS</h2>
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page</p>
+                                <div class="newgroup d-flex">
+                                    <input type="text" placeholder="Email" class="w-75 py-2 ps-3">
+                                    <button type="button" class="btn btn-success w-25" onclick="add()">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 p-5">
+                            <div class="blog">
+                                <h2 class="mb-3 fw-bold">FROM BLOGS</h2>
+                                <div id="forAdd" class="">
+                                    <div class=" favourite b-images3 blog-3 d-flex bg-white mb-3" id="blg-loop">
+                                        <img src="" id="forAddimg" class="img-fluid w-25" alt="">
+                                        <div class="b-report w-75 bg-white p-4">
+                                            <h3 class="fs-5" id="forAddh3"></h3>
+                                            <p class="m-0" id="forAddp"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container p-5">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="buil">
+                            <img src="./truck-img/Untitled-2.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="f-service">
+                            <h5 class="fs-5 text-white mb-3">SERVICES</h5>
+                            <a href="#" class="text-secondary text-decoration-none d-block mb-2">PLANNING</a>
+                            <a href="#" class="text-secondary text-decoration-none d-block mb-2">CONSULTING</a>
+                            <a href="#" class="text-secondary text-decoration-none d-block mb-2">INTERIOR</a>
+                            <a href="#" class="text-secondary text-decoration-none d-block mb-2">CONSTRUCTION</a>
+                            <a href="#" class="text-secondary text-decoration-none d-block mb-2">CLEANING</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="f-service">
+                            <h5 class="fs-5 text-white mb-3">NAVIGATION</h5>
+                            <a href="#" class="text-secondary text-decoration-none d-block mb-2">HOME</a>
+                            <a href="#" class="text-secondary text-decoration-none d-block mb-2">ABOUT US</a>
+                            <a href="#" class="text-secondary text-decoration-none d-block mb-2">SERVICES</a>
+                            <a href="#" class="text-secondary text-decoration-none d-block mb-2">PROJECTS</a>
+                            <a href="#" class="text-secondary text-decoration-none d-block mb-2">BLOGS</a>
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="f-service">
+                            <h5 class="fs-5 text-white mb-3">CONTACT US</h5>
+                            <a href="#" class="text-secondary text-decoration-none d-block mb-2"><span
+                                    class="fs-6 text-white">ADDRESS :</span>Lipsum Street Info Second Floor 909</a>
+                            <a href="#" class="text-secondary text-decoration-none d-block mb-2"><span
+                                    class="fs-6 text-white">PHONE :</span>+00 392-233-902</a>
+                            <a href="#" class="text-secondary text-decoration-none d-block mb-3"><span
+                                    class="fs-6 text-white">EMAIL :</span>INFO@BUILDPLUS.COM</a>
+                            <div class="row d-flex fs-3 f-icons">
+                                <div class="col-md-3 rc">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                </div>
+                                <div class="col-md-3 rc">
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </div>
+                                <div class="col-md-3 rc">
+                                    <a href="#"><i class="fa-brands fa-linkedin-in "></i></a>
+                                </div>
+                                <div class="col-md-3 rc">
+                                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+<script src="truck_js.js"></script>
+
+</html>
