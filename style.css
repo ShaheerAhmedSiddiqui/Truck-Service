@@ -169,7 +169,7 @@
     }
     .ocean{
         font-family: 'Courier New', Courier, monospace;
-        padding: 1.5rem!important;
+        padding: 2rem 1.5rem!important;
 
     }
     .ocean p{
@@ -229,7 +229,7 @@
         color: skyblue;
     }
     .fa-ship{
-        font-size: 63px;
+        font-size: 45px;
     }
     .civil-p{
         font-size: 14px;
