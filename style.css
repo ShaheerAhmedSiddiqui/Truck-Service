@@ -333,9 +333,9 @@
     /* .logistic {
         padding: 73px 0px;
     }     */
-    .context {
+    /* .context {
         padding: 75px;
-    }
+    } */
     .ocean p{
         font-size: 0.5rem;
     }
@@ -416,6 +416,9 @@
     .fa-twitter{
         padding: 0px !important;
     }
+    .context {
+        padding: 50px !important;
+    }
     }
     @media (max-width: 425px){
     .logistic{
@@ -433,7 +436,7 @@
         width: 25%;
     }
     }
-    @media only screen and (max-width:991px) and (min-width:320px){
+    @media (max-width:320px){
         .ht-img{
             display: flex;
             align-items: baseline;
