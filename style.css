@@ -337,6 +337,10 @@
     /* .context {
         padding: 75px;
     } */
+    .ht-img.text-center.m-0 {
+        display: flex;
+        align-items: baseline;
+    }
     .ocean p{
         font-size: 0.5rem;
     }
@@ -422,6 +426,10 @@
     }
     }
     @media (max-width: 425px){
+        .ht-img.text-center.m-0 {
+            display: flex;
+            align-items: baseline;
+        }
     .logistic{
         padding: 25px 0px !important;
     }  
@@ -438,6 +446,10 @@
     }
     }
     @media (max-width:320px){
+        .ht-img.text-center.m-0 {
+            display: flex;
+            align-items: baseline;
+        }
         .ht-img{
             display: flex;
             align-items: baseline;
