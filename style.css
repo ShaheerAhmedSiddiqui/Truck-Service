@@ -236,6 +236,7 @@
     }
     .quick-inp{
         font-size: 13px;
+        word-wrap: break-word;
     }
     .sumbitm-btn{
         padding: 2px 5px;
